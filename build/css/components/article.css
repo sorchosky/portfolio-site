@@ -1,0 +1,50 @@
+/*Import fonts*/
+@font-face {
+  font-family: "Sofia";
+  src: url("../../fonts/Sofia_Pro_Regular.otf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Sofia";
+  src: url("../../fonts/Sofia_Pro_Bold.otf");
+  font-weight: 700; }
+
+article.article {
+  margin-top: 6em;
+  background-color: #fff; }
+
+div.article-image-left {
+  width: 100%;
+  position: absolute; }
+
+img.article-image-left--ravenna {
+  width: 30em;
+  left: 15%;
+  bottom: -15%;
+  margin: auto;
+  display: block; }
+
+.button-container {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 1em; }
+  .button-container a.article-text__a {
+    font-family: "Sofia", "Futura", helvetica, arial, sans-serif;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    width: 100%; }
+
+div.article-text {
+  margin: 15em auto 0 auto;
+  padding: 3em;
+  padding-top: 6em;
+  background-color: #fff;
+  width: 100%;
+  max-width: 30em; }
+  div.article-text h3, div.article-text p {
+    text-align: center;
+    width: 100%;
+    margin: 0.5em auto; }

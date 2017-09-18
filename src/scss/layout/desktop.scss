@@ -1,9 +1,14 @@
-// .image-list-item{
-//   width: 32.5%;
-//   margin-bottom: 1%;
-// }
-
 .image-list{
   column-count: 3;
   column-gap: 0;
+}
+
+.fifty-fifty{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.fifty-fifty *{
+  width: 50%;
 }

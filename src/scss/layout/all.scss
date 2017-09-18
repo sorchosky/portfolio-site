@@ -107,6 +107,10 @@ img.image-list-item--image {
   width: 100%;
 }
 
+img.responsive {
+  width: 100%;
+}
+
 /* Clients */
 .textured > section > ul {
   display: flex;
@@ -253,6 +257,20 @@ input, textarea {
 .two-col-layout > .sidebar h5{
   color: #38474f;
   opacity: 0.6;
+}
+
+/****************
+Fifth-Fifty Grid
+****************/
+
+.fifty-fifty{
+  display: block;
+  position: relative;
+}
+
+.fifty-fifty *{
+  width: 100%;
+  display: block;
 }
 
 /****************

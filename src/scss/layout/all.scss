@@ -1,7 +1,9 @@
 @import "../helpers/variables";
 @import "../../fonts/font-awesome-4.7.0/css/font-awesome.min.css";
 
-// layout
+/***********************
+Global Styles and layout
+***********************/
 
 body{
   margin: 0;
@@ -20,9 +22,9 @@ nav,
 footer{
   display: flex;
   justify-content: space-between;
-  width: 100%;
   max-width: 96em;
   margin: auto;
+  padding: 0 3.2em;
 }
 
 nav .logo,
@@ -132,8 +134,91 @@ section > ul > li.client > img {
   margin-bottom: 3em;
 }
 
+/**********
+Works Pages
+**********/
+
+// Intro
+
+div.top_background--content{
+    padding: 0 3.2em;
+}
+
+.design-mockup-container{
+  width: 100%;
+  margin: auto;
+  position: relative;
+  bottom: -10em;
+}
+
+img.design-mockup{
+  width: 75%;
+  left: 12.5%;
+  position: relative;
+  z-index: 5;
+  margin: auto;
+}
+
+// Primary Color Section : Info
+
+section.primary-color-section{
+  max-width: 96em;
+  padding: 12.8em 3.2em 3.2em 3.2em;
+  position: relative;
+  h2, h3, h4, p{
+    color: #fff;
+  }
+  h2{
+    max-width: 70%;
+  }
+  h4{
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  h5{
+    font-size: 1.3em;
+  }
+}
+
+// Approved design
+.approved-design{
+  width: 100%;
+  z-index: 5;
+}
+
+section.approved-design-section{
+  position: relative;
+}
+
+section.secondary-color-section{
+  padding: 6.4em 3.2em;
+}
+
+// Carousel Edits
+.slick-dots li button{
+  width: 2em;
+  height: 2em;
+  padding: 1em;
+  font-size: 2em;
+}
+
+.slick-dots li button:before{
+  font-size: 2em;
+  margin-top: 0.5em;
+  color: #525352;
+  opacity: 0.3;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.slick-dots li.slick-active button:before{
+  color: #2962FF;
+  opacity: 1;
+}
+
 /***********
-Contact
+Contact Section
 ************/
 
 /*Social Icons*/
@@ -206,7 +291,7 @@ input, textarea {
 
 #intro h1 {
   max-width: 80em;
-  padding: 0 0.5em;
+  padding: 0;
 }
 
 #intro h5 {
@@ -220,6 +305,7 @@ input, textarea {
 .two-col-layout {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .main {
@@ -256,7 +342,6 @@ input, textarea {
 
 .two-col-layout > .sidebar h5{
   color: #38474f;
-  opacity: 0.6;
 }
 
 /****************

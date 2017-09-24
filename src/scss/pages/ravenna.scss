@@ -4,82 +4,49 @@
 @import "../components/buttons.scss";
 @import "../components/typography.scss";
 
-$primary-color: #b24c19;
-$primary-color-overlay: #c6721e;
-$secondary-color: #f6ecd1;
+// Intro Section
 
 div.top_background{
   width: 100%;
+  height: auto;
   background-image: url("../../img/ravenna/mountains.png");
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 #intro{
-  padding: 0;
-  margin-bottom: 0;
-  padding-bottom: 20em;
+  margin-bottom: 3em;
+  padding-bottom: 3em;
+  padding-left: 0;
   h1{
-    margin: 0;
   }
 }
 
-.design-mockup-container{
-  width: 100%;
-  margin: auto;
-  position: relative;
-  bottom: 20em;
-}
-
-img.design-mockup{
-  width: 75%;
-  left: 12.5%;
-  position: relative;
-  z-index: 5;
-  margin: auto;
-}
+// Main Description Section
 
 div.primary-color{
   width: 100%;
-  padding: 0;
-  background-color: $primary-color;
+  background-color: $primary-color-ravenna;
 }
 
 section.primary-color-section{
-  background-color: $primary-color;
-  max-width: 96em;
-  padding: 0 3.2em;
-  position: relative;
-  bottom: 15em;
-  padding-bottom: 3.2em;
-  h2, h3, h4, p{
-    color: #fff;
-  }
-  h4{
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-  }
+  background-color: $primary-color-ravenna;
   h5{
-    color: $primary-color-overlay !important;
-    font-size: 1.3em;
+    color: $primary-color-overlay-ravenna !important;
   }
 }
 
-section.approved-design-section{
-  position: relative;
-  bottom: 8em;
-}
-
-.approved-design{
-  width: 100%;
-  z-index: 5;
-}
+// Additional Screens and classes
 
 div.secondary-color {
-  background-color: $secondary-color;
+  background-color: $secondary-color-ravenna;
 }
 
-section.secondary-color-section{
-  padding: 6.4em 3.2em;
+//Works media queries
+
+@media screen and (min-width: 768px) {
+  section#intro{
+    width: 70%;
+  }
 }

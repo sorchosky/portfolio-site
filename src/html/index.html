@@ -19,8 +19,23 @@
 
     </script>
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MJ5FK2L');</script>
+    <!-- End Google Tag Manager -->
+
     <!-- CSS Styles -->
     <link rel="stylesheet" href="css/pages/index.css">
+
+
+    <!-- Layout -->
+    <link rel="stylesheet" href="css/layout/all.css">
+    <link rel="stylesheet" href="css/layout/tablet.css" media="all and (min-width:768px)">
+    <link rel="stylesheet" href="css/layout/desktop.css" media="all and (min-width:1080px)">
+    <link rel="stylesheet" href="css/layout/large-desktop.css" media="all and (min-width:1440px)">
 
     <!-- Script -->
     <!-- jQuery -->
@@ -28,6 +43,11 @@
 
   </head>
 <body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ5FK2L"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <div class="wrapper">
   <!-- Header -->
@@ -78,19 +98,38 @@
   <!-- Works -->
   <div class="textured">
     <section>
-      <h2>Latest Works</h2>
-      <div class="article-image-left" id="ravenna_thumbnail">
-        <img class="article-image-left--ravenna" src="img/ravenna/ravenna_thumb.png" alt="">
-      </div>
-      <article class="article">
+      <h2>Works</h2>
+
+      <a href="ravenna.html">
+        <article class="article article-image-left">
+          <div class="article-image-container">
+            <img class="article-image ravenna" src="img/ravenna/ravenna_thumb.png" alt="">
+          </div>
+          <div class="article-text">
+            <h3>The Club at Ravenna</h3>
+            <p>Website design for a client of Clubessential.</p>
+            <div class="button-container">
+              <a class="article-text__a">View Project</a>
+            </div>
+          </div>
+        </article>
+      </a>
+
+      <a href="release.html">
+      <article class="article article-image-right">
+        <div class="article-image-container">
+          <img class="article-image release" src="img/release/iphone-mock-thumb.png" alt="">
+        </div>
         <div class="article-text">
-          <h3>The Club at Ravenna</h3>
-          <p>Website design for a client of Clubessential.</p>
+          <h3>Release</h3>
+          <p>App design submission for HackOTR 2015</p>
           <div class="button-container">
-            <a class="article-text__a" href="ravenna.html">View Project</a>
+            <a class="article-text__a">View Project</a>
           </div>
         </div>
       </article>
+      </a>
+
     </section>
   </div>
 

@@ -18,6 +18,7 @@ gulp.task('serve', function() {
     //watch for changes in scss and html folders, and compile if changed
     gulp.watch("./src/scss/**/*.scss", ['sass']);
     gulp.watch("./src/html/*.html", ['copy-html']);
+    gulp.watch("./src/html/*.html", ['copy-js']);
 });
 
 // Compile sass into CSS & auto-inject into browsers
@@ -39,6 +40,17 @@ gulp.task('copy-html', function() {
     .pipe(gulp.dest('./build'))
     .pipe(browserSync.stream());
 });
+
+// Copy js to build file
+gulp.task('copy-js', function() {
+    gulp.src('./src/js/**/*.js')
+    // Perform minification tasks, etc here
+    .pipe(gulp.dest('./build/js'))
+    .pipe(browserSync.stream());
+});
+
+//build it all!!!
+gulp.task('build', ['copy-html', 'sass', 'copy-js']);
 
 // gulp
 // Running gulp default will allow any changes to the src files to compile to the build folder and refresh the browser. Click Control + C in terminal to close

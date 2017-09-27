@@ -1,5 +1,5 @@
 /*Import fonts*/
-@import url(../../fonts/font-awesome-4.7.0/css/font-awesome.min.css);
+@import url(../fonts/font-awesome-4.7.0/css/font-awesome.min.css);
 @font-face {
   font-family: "Sofia";
   src: url("../../fonts/Sofia_Pro_Regular.otf");
@@ -76,7 +76,7 @@ ul {
 
 /* Article Cards */
 .textured {
-  background: url(../../img/noisy_grid.png);
+  background: url(../img/noisy_grid.png);
   background-repeat: repeat;
   width: 100%;
   padding: 6.4em 0;
@@ -186,7 +186,7 @@ section.secondary-color-section {
     opacity: 1; }
 
 .slick-dots li.slick-active button:before {
-  color: #2962FF;
+  color: #2962ff;
   opacity: 1; }
 
 /***********
@@ -214,31 +214,26 @@ ul.social-icons > li i.fa:hover {
 
 /*Contact Form*/
 form.contact-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  display: block;
   width: 100%;
   max-width: 79.4em; }
 
 form.contact-form div {
   margin-bottom: 2.4em;
-  width: 50%; }
+  width: 100%; }
 
 form.contact-form div.comments {
   display: block;
   width: 100%; }
 
-form.contact-form input.text-field {
+form.contact-form input.text-field, textarea {
   display: block;
-  width: 90%;
+  width: 97%;
   -webkit-box-flex: 1;
   -ms-flex: 1;
-  flex: 1; }
+  flex: 1;
+  resize: none;
+  overflow: auto; }
 
 form.contact-form > div > textarea {
   width: 100%;

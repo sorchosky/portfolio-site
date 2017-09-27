@@ -88,7 +88,7 @@ $headers = 'From: '.$email_from."\r\n".
     <meta charset="utf-8" name="viewport" content="width=device-width">
     <title>Success!</title>
     <meta name="robots" content="noindex" />
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="../favicon.ico">
     <!-- Google Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -102,21 +102,21 @@ $headers = 'From: '.$email_from."\r\n".
     </script>
 
     <!-- CSS Styles -->
-    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="../css/typography.css">
     <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.8/release/featherlight.min.css" type="text/css" rel="stylesheet" />
 
     <!-- Components -->
-    <link rel="stylesheet" href="css/components/typography.css">
-    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="../css/components/typography.css">
+    <link rel="stylesheet" href="../css/components/buttons.css">
 
     <!-- Layout -->
-    <link rel="stylesheet" href="css/layout/all.css">
-    <link rel="stylesheet" href="css/layout/tablet.css" media="all and (min-width:768px)">
-    <link rel="stylesheet" href="css/layout/desktop.css" media="all and (min-width:1080px)">
-    <link rel="stylesheet" href="css/layout/large-desktop.css" media="all and (min-width:1440px)">
+    <link rel="stylesheet" href="../css/layout/all.css">
+    <link rel="stylesheet" href="../css/layout/tablet.css" media="all and (min-width:768px)">
+    <link rel="stylesheet" href="../css/layout/desktop.css" media="all and (min-width:1080px)">
+    <link rel="stylesheet" href="../css/layout/large-desktop.css" media="all and (min-width:1440px)">
 
     <!-- Page -->
-    <link rel="stylesheet" href="/css/pages/email_success.css">
+    <link rel="stylesheet" href="../css/pages/email_success.css">
 
     <!-- Script -->
     <!-- jQuery -->
@@ -163,8 +163,8 @@ $headers = 'From: '.$email_from."\r\n".
       </svg>
     </a>
     <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a href="illustration.html">Illustration</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../illustration.html">Illustration</a></li>
     </ul>
   </nav>
 

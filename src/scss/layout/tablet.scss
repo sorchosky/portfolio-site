@@ -120,3 +120,20 @@ img.design-mockup{
   z-index: 5;
   margin: auto;
 }
+
+// Contact
+
+form.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form.contact-form div {
+  margin-bottom: 2.4em;
+  width: 50%;
+}
+
+form.contact-form input.text-field {
+  width: 90%;
+}

@@ -1,5 +1,5 @@
 @import "../helpers/variables";
-@import "../../fonts/font-awesome-4.7.0/css/font-awesome.min.css";
+@import "../fonts/font-awesome-4.7.0/css/font-awesome.min.css";
 
 /***********************
 Global Styles and layout
@@ -73,7 +73,7 @@ ul{
 
 /* Article Cards */
 .textured{
-  background: url(../../img/noisy_grid.png);
+  background: url(../img/noisy_grid.png);
   background-repeat: repeat;
   width: 100%;
   padding: 6.4em 0;
@@ -213,7 +213,7 @@ section.secondary-color-section{
 }
 
 .slick-dots li.slick-active button:before{
-  color: #2962FF;
+  color: $accent-color;
   opacity: 1;
 }
 
@@ -245,21 +245,19 @@ ul.social-icons > li i.fa {
 }
 
 ul.social-icons > li i.fa:hover {
-  color: #2962ff;
+  color: $accent-color;
 }
 
 /*Contact Form*/
 form.contact-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: block;
   width: 100%;
   max-width: 79.4em;
 }
 
 form.contact-form div {
   margin-bottom: 2.4em;
-  width: 50%;
+  width: 100%;
 }
 
 form.contact-form div.comments {
@@ -267,10 +265,12 @@ form.contact-form div.comments {
   width: 100%;
 }
 
-form.contact-form input.text-field {
+form.contact-form input.text-field, textarea {
   display: block;
-  width: 90%;
+  width: 97%;
   flex: 1;
+  resize: none;
+  overflow: auto;
 }
 
 form.contact-form > div > textarea {
@@ -341,7 +341,7 @@ input, textarea {
 }
 
 .two-col-layout > .sidebar h5{
-  color: #38474f;
+  color: $primary-color;
 }
 
 /****************

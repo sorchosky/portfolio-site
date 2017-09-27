@@ -166,7 +166,7 @@ a {
     text-decoration: none; }
 
 .logo {
-  fill: #38474F; }
+  fill: #38474f; }
   .logo:hover {
     fill: #2962ff; }
 
@@ -187,7 +187,8 @@ label {
   font-size: 1.3em;
   text-transform: uppercase; }
 
-form.contact-form div input, form.contact-form div text-area {
+form.contact-form div input, form.contact-form div textarea {
+  font-family: "Sofia", "Futura", helvetica, arial, sans-serif;
   font-size: 1.6em;
   line-height: 1.4;
   padding: 0.5em; }

@@ -5,7 +5,7 @@
 .type{
   font-family: $primary-font-stack;
   font-weight: 400;
-  color: #38474f;
+  color: $primary-color;
   text-align: left;
 }
 
@@ -18,7 +18,7 @@ h1 {
 
 h1, h2, h3, a{
   span{
-    color: #2962ff;
+    color: $accent-color;
   }
 }
 
@@ -65,7 +65,7 @@ p {
 
 .textured{
   h6 {
-    color: #38474f;
+    color: $primary-color;
     opacity: 0.6;
   }
 }
@@ -83,21 +83,21 @@ p {
 }
 
 a {
-  color: #2962ff;
+  color: $accent-color;
   text-decoration: none;
   transition: 0.2s ease-in-out;
   &:hover {
     text-decoration: underline;
-    color: #2962ff;
+    color: $accent-color;
     cursor: pointer;
     text-decoration: none;
   }
 }
 
 .logo{
-  fill: #38474F;
+  fill: $primary-color;
   &:hover{
-    fill: #2962ff;
+    fill: $accent-color;
   }
 }
 
@@ -107,14 +107,14 @@ nav > ul a,
 footer ul a {
   font-size: 1.6em;
   padding-left: 2em;
-  color: #38474f;
+  color: $primary-color;
   font-family: "Sofia", "Futura", helvetica, arial, sans-serif;
   text-transform: uppercase;
 }
 
 nav{
   span{
-    color: #2962ff;
+    color: $accent-color;
   }
 }
 
@@ -127,7 +127,8 @@ label{
 
 form.contact-form {
   div {
-    input, text-area{
+    input, textarea{
+    font-family: $primary-font-stack;
     font-size: 1.6em;
     line-height: 1.4;
     padding: 0.5em;

@@ -4,49 +4,4 @@
 @import "../components/buttons.scss";
 @import "../components/typography.scss";
 
-// Intro Section
 
-div.top_background{
-  width: 100%;
-  height: auto;
-  background-image: url("../../img/ravenna/mountains.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-#intro{
-  margin-bottom: 3em;
-  padding-bottom: 3em;
-  padding-left: 0;
-  h1{
-  }
-}
-
-// Main Description Section
-
-div.primary-color{
-  width: 100%;
-  background-color: $primary-color-ravenna;
-}
-
-section.primary-color-section{
-  background-color: $primary-color-ravenna;
-  h5{
-    color: $primary-color-overlay-ravenna !important;
-  }
-}
-
-// Additional Screens and classes
-
-div.secondary-color {
-  background-color: $secondary-color-ravenna;
-}
-
-//Works media queries
-
-@media screen and (min-width: 768px) {
-  section#intro{
-    width: 70%;
-  }
-}

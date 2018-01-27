@@ -18,7 +18,7 @@ gulp.task('serve', function() {
     //watch for changes in scss and html folders, and compile if changed
     gulp.watch("./src/scss/**/*.scss", ['sass']);
     gulp.watch("./src/html/*.html", ['copy-html']);
-    gulp.watch("./src/html/*.html", ['copy-js']);
+    gulp.watch("./src/js/*.js", ['copy-js']);
 });
 
 // Compile sass into CSS & auto-inject into browsers

@@ -20,7 +20,7 @@ body {
   font-size: 62.5%; }
 
 .wrapper {
-  margin: 2em auto; }
+  padding: 2em 0; }
 
 /* Navigation and Footer*/
 nav,
@@ -31,7 +31,7 @@ footer {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  max-width: 96em;
+  max-width: 120em;
   margin: auto;
   padding: 0 3.2em; }
 
@@ -61,133 +61,18 @@ footer {
   margin-right: 1em; }
 
 section {
-  max-width: 96em;
+  max-width: 120em;
   margin: auto;
   margin-bottom: 3em;
   padding: 2em; }
 
 hr {
-  max-width: 96em;
+  max-width: 120em;
   margin: 6em auto;
   border: 1px solid #cfd8dc; }
 
 ul {
   padding: 0; }
-
-/* Article Cards */
-.textured {
-  background: url(../img/noisy_grid.png);
-  background-repeat: repeat;
-  width: 100%;
-  padding: 6.4em 0;
-  margin-bottom: 8.821em; }
-
-.textured > section {
-  max-width: 96em;
-  padding: 0 3.2em; }
-
-.image-list {
-  text-decoration: none;
-  list-style-type: none;
-  padding: 1.5%;
-  margin: auto;
-  padding-bottom: 6em;
-  max-width: 160em;
-  display: block; }
-
-.image-list-item {
-  list-style-type: none;
-  padding-bottom: 1%;
-  width: 100%;
-  margin: auto; }
-
-img.image-list-item--image {
-  display: block;
-  width: 100%; }
-
-img.responsive {
-  width: 100%; }
-
-/* Clients */
-.textured > section > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 0; }
-
-.textured > section > ul > li {
-  text-decoration: none;
-  list-style: none; }
-
-.textured > section > ul > li > img {
-  width: 100%; }
-
-section > ul > li.client > img {
-  margin-bottom: 3em; }
-
-/**********
-Works Pages
-**********/
-div.top_background--content {
-  padding: 0 3.2em; }
-
-.design-mockup-container {
-  width: 100%;
-  margin: auto;
-  position: relative;
-  bottom: -10em; }
-
-img.design-mockup {
-  width: 75%;
-  left: 12.5%;
-  position: relative;
-  z-index: 5;
-  margin: auto; }
-
-section.primary-color-section {
-  max-width: 96em;
-  padding: 12.8em 3.2em 3.2em 3.2em;
-  position: relative; }
-  section.primary-color-section h2, section.primary-color-section h3, section.primary-color-section h4, section.primary-color-section p {
-    color: #fff; }
-  section.primary-color-section h2 {
-    max-width: 70%; }
-  section.primary-color-section h4 {
-    text-transform: uppercase;
-    letter-spacing: 0.06em; }
-  section.primary-color-section h5 {
-    font-size: 1.3em; }
-
-.approved-design {
-  width: 100%;
-  z-index: 5; }
-
-section.approved-design-section {
-  position: relative; }
-
-section.secondary-color-section {
-  padding: 6.4em 3.2em; }
-
-.slick-dots li button {
-  width: 2em;
-  height: 2em;
-  padding: 1em;
-  font-size: 2em; }
-
-.slick-dots li button:before {
-  font-size: 2em;
-  margin-top: 0.5em;
-  color: #525352;
-  opacity: 0.3; }
-  .slick-dots li button:before:hover {
-    opacity: 1; }
-
-.slick-dots li.slick-active button:before {
-  color: #2962ff;
-  opacity: 1; }
 
 /***********
 Contact Section
@@ -228,7 +113,7 @@ form.contact-form div.comments {
 
 form.contact-form input.text-field, textarea {
   display: block;
-  width: 97%;
+  width: 95%;
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -236,7 +121,6 @@ form.contact-form input.text-field, textarea {
   overflow: auto; }
 
 form.contact-form > div > textarea {
-  width: 100%;
   -webkit-box-flex: 2;
   -ms-flex: 2;
   flex: 2; }
@@ -246,8 +130,8 @@ input, textarea {
 
 /* ID */
 #intro {
-  margin: 15vh auto;
-  max-width: 96em; }
+  margin: 10vh auto;
+  max-width: 120em; }
 
 #intro h1 {
   max-width: 80em;
@@ -256,18 +140,19 @@ input, textarea {
 #intro h5 {
   margin-bottom: 0; }
 
+.responsive {
+  width: 100%; }
+
+.web-shadow {
+  margin: 1em;
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3); }
+
 /***********
 2-col-layout
 ***********/
 .two-col-layout {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+  display: block; }
 
 .main {
   display: block;
@@ -291,9 +176,6 @@ input, textarea {
 .two-col-layout > .sidebar h5 {
   margin: 0.25em 0;
   padding: 0; }
-
-.two-col-layout > .sidebar h5 {
-  color: #38474f; }
 
 /****************
 Fifth-Fifty Grid
@@ -328,18 +210,3 @@ Quad Flex Grid
 
 .quad-flex-grid .main {
   width: 100%; }
-
-/****************
-Resume
-****************/
-.resume-entry {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
-
-.resume-entry > .main {
-  -ms-flex-item-align: end;
-  align-self: flex-end; }

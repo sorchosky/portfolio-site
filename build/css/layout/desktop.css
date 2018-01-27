@@ -1,9 +1,3 @@
-.image-list {
-  -webkit-column-count: 3;
-  column-count: 3;
-  -webkit-column-gap: 0;
-  column-gap: 0; }
-
 .fifty-fifty {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,9 +11,3 @@
 
 .fifty-fifty * {
   width: 50%; }
-
-article img.ravenna {
-  max-width: 65em; }
-
-article img.release {
-  max-width: 40em; }

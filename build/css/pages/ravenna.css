@@ -20,54 +20,64 @@
   src: url("../../fonts/Sofia_Pro_Bold.otf");
   font-weight: 700; }
 
-article.article {
-  margin-top: 10em;
-  background-color: #fff;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease; }
-  article.article:hover {
-    cursor: pointer; }
+article.feature {
+  height: 37.4em; }
 
-div.article-image-container {
-  position: relative;
-  z-index: 10;
-  bottom: 5em; }
+article.feature-ravenna {
+  background-image: url("../img/ravenna/mountains.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
 
-div.article-text {
-  padding-bottom: 3em; }
-  div.article-text * {
-    text-align: center; }
-  div.article-text h3, div.article-text label {
-    padding: 0;
-    margin: 0;
-    padding-bottom: 0.25em; }
-  div.article-text p {
-    padding: 0;
-    margin: 0;
-    padding-bottom: 0.25em; }
+div.gradient {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
-article img.article-image {
-  margin: auto;
-  display: block; }
+.feature-text {
+  padding: 4em;
+  -ms-flex-item-align: center;
+  align-self: center; }
+  .feature-text * {
+    color: #fff; }
 
-article img.ravenna {
-  max-width: 30em; }
+section.other_projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: horizontal;
+  flex-direction: horizontal;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
-article img.release {
-  max-width: 30em; }
-
-.button-container {
-  margin: auto;
-  width: 100%;
-  text-align: center;
-  padding-top: 1em; }
-  .button-container a.article-text__a {
+article.project {
+  width: 46%; }
+  article.project img {
+    width: 100%;
+    margin-bottom: 2em; }
+  article.project h3, article.project label {
+    margin-bottom: 0;
+    padding-bottom: 0; }
+  article.project a {
     font-family: "Sofia", "Futura", helvetica, arial, sans-serif;
     font-size: 1.6em;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    text-align: center;
-    width: 100%; }
+    letter-spacing: 0.05em; }
 
 .btn,
 input.btn {
@@ -127,9 +137,9 @@ h4 {
   font-weight: 700; }
 
 h5 {
-  font-size: 1.6em;
+  font-size: 1.4em;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   color: #cfd8dc; }
 
 h6 {
@@ -201,32 +211,3 @@ form.contact-form div input, form.contact-form div textarea {
 
 .resume-entry h4 {
   font-weight: 400; }
-
-div.top_background {
-  width: 100%;
-  height: auto;
-  background-image: url("../../img/ravenna/mountains.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain; }
-
-#intro {
-  margin-bottom: 3em;
-  padding-bottom: 3em;
-  padding-left: 0; }
-
-div.primary-color {
-  width: 100%;
-  background-color: #b24c19; }
-
-section.primary-color-section {
-  background-color: #b24c19; }
-  section.primary-color-section h5 {
-    color: #c6721e !important; }
-
-div.secondary-color {
-  background-color: #f6ecd1; }
-
-@media screen and (min-width: 768px) {
-  section#intro {
-    width: 70%; } }

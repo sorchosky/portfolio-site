@@ -1,5 +1,6 @@
 .two-col-layout {
   display: block;
+  padding: 0;
   @include tablet {
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +31,7 @@ div.two-col-layout {
   aside {
     ul {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
     @include tablet {
@@ -39,17 +40,26 @@ div.two-col-layout {
     list-style: none;
     padding: 0;
       li {
-        margin-bottom: 3em;
-        width: 33%;
+        margin-bottom: 2em;
+        width: 100%;
         @include tablet {
           width: auto;
         }
       }
     }
-    ul.credits li {
-      margin-bottom: 1em;
+    ul.credits {
+      h4 {
+        width: 100%;
+      }
+      li {
+        margin-bottom: 1em;
+      }
     }
   }
+}
+
+div.main ul {
+  margin: 0;
 }
 
 .two-col-layout > aside h4,

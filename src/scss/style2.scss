@@ -2,19 +2,22 @@
 // Version 2018.00.01
 
 //Reset
-@import "helpers/reset";
+// @import "helpers/reset";
+
 //Helpers
 @import "helpers/fonts";
 @import "helpers/variables";
 @import "helpers/mixins";
 
 // Components
+@import "components/loading.scss";
 @import "components/buttons.scss";
 @import "components/typography.scss";
 @import "components/header.scss";
 @import "components/project-slider.scss";
 @import "components/form.scss";
 @import "components/footer.scss";
+@import "components/images.scss";
 
 // Page Layouts
 @import "layout/global.scss";
@@ -24,6 +27,5 @@
 @import "layout/project__two-column.scss";
 @import "layout/project__tempur-pedic-landing-pages.scss";
 @import "layout/release.scss";
-@import "layout/works.scss";
 @import "layout/illustration.scss";
 @import "layout/email_success.scss";

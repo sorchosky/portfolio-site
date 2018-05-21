@@ -20,7 +20,10 @@ h1 {
   font-weight: 500;
   line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.75em;
+  @include tablet {
+    font-size: 3.2em;
+  }
   &.homepage {
     font-size: 3.2em;
     @include tablet {
@@ -31,7 +34,7 @@ h1 {
 
 h2 {
   @extend .type;
-  font-size: 2.3em;
+  font-size: 2em;
   font-weight: 500;
   margin: 0 0 0.6em 0;
   &.follow-my-work {
@@ -41,7 +44,7 @@ h2 {
 
 h3 {
   @extend .type;
-  font-size: 1.8em;
+  font-size: 1.4em;
   font-weight: 500;
   margin-bottom: 0.35em;
   margin-top: 0;
@@ -49,20 +52,18 @@ h3 {
 
 h4 {
   @extend .type;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   &.sidebar-category {
     margin: 0.25em 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 }
 
 h5 {
   @extend .type;
-  font-size: 1em;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-size: 1.2em;
   font-weight: 300;
   line-height: 1.2;
   &.continue__text {
@@ -82,15 +83,21 @@ h5 {
 
 h6 {
   @extend .type;
-  font-size: 1em;
-  margin: 0;
+  font-size: 0.7em;
+  margin: 0 auto;
   color: #cfd8dc;
   max-width: 60em;
   &.footer-copyright {
     text-align: center;
       @include tablet {
+        margin: 0;
         text-align: right;
       }
+  }
+  &.sidebar-descriptor {
+    font-size: 0.9em;
+    color: $light-gray;
+    margin: 0.25em 0;
   }
 }
 
@@ -123,8 +130,8 @@ a {
   text-decoration: none;
   transition: 0.1s ease-in-out;
   &.nav-link {
-    font-size: 0.9em;
-    padding-left: 1em;
+    font-size: 0.8em;
+    padding-left: 1.6em;
     color: $black;
     font-family: $intervogue-stack;
     font-weight: 900;
@@ -147,15 +154,4 @@ a {
 li.overlay-nav__item {
   @extend h3;
   text-align: center;
-}
-
-/*Resume Section*/
-.resume-entry {
-  h3 {
-  font-weight: 700;
-  margin-bottom: 0;
-  }
-  h4 {
-    font-weight: 400;
-  }
 }

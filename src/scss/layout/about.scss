@@ -1,11 +1,8 @@
 /****************
 Resume
 ****************/
+
 /* Article Cards */
-.textured > section{
-  max-width: 120em;
-  padding: 0 3.2em;
-}
 
 .resume-entry{
   display: flex;
@@ -14,4 +11,49 @@ Resume
 
 .resume-entry > .main{
   align-self: flex-end;
+}
+
+.about-intro {
+	margin-bottom: 0;
+	padding-top: 8em;
+}
+
+div.skills-row {
+	display: block;
+	@include desktop {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-items: flex-start;
+	}
+	h3 {
+		margin-bottom: 1em;
+	}
+}
+
+ul.skills {
+	display: block;
+	width: 100%;
+	padding-left: 1em;
+	@include desktop {
+		width: 70%;
+		padding-left: 0;
+	}
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	margin-top: 0;
+	margin-bottom: 0;
+	li {
+		width: 46%;
+		@include tablet {
+			width: 28%;
+		}
+		p {
+			margin: 0;
+			line-height: 1.2;
+			padding-bottom: 1em;
+		}
+	}
 }

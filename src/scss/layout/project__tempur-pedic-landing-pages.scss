@@ -4,12 +4,22 @@ section.working-examples ul {
 	width: 100%;
 	align-items: flex-end;
 	flex-wrap: wrap;
+	list-style-type: none;
 	li {
-		width: 18%;
+		a{
+			transition: all 0.3s $custom-timing;
+    		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    		display: block;
+			&:hover {
+		      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+		      transform: scale(1.01);
+		    }
+		    margin: 1em;
+		    padding: 1em;
+		}
 		img {
 			display: block;
 			width: 100%;
-			padding-bottom: 1em;
 		}
 	}
 }

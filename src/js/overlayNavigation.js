@@ -1,7 +1,11 @@
-$("#projects").click(function(){
-	$(".overlay-container").show(300);
-});
+/* Open when someone clicks on the span element */
+function openNav() {
+    document.getElementById("myNav").style.visibility = "visible";
+    document.getElementById("myNav").style.opacity = 1;
+}
 
-$("#fa-close").click(function(){
-	$(".overlay-container").hide(1000);
-});
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+	document.getElementById("myNav").style.opacity = 0;
+	document.getElementById("myNav").style.visibility = "hidden";
+}

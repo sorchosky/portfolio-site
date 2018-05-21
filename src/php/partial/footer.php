@@ -30,8 +30,9 @@
 
   <div class="footer-right">
     <ul class="footer-right__nav">
-      <li><a href="about.html" class="nav-link">About</a></li>
-      <li><a href="illustration.html" class="nav-link">Illustration</a></li>
+      <li><a href="about.php" class="nav-link <?php echo ($page == "about.php" ? "active" : "")?>"  href="about.php">About</a></li>
+      <li><a href="illustration.php" class="nav-link <?php echo ($page == "illustration.php" ? "active" : "")?>">Illustration</a></li>
+      <li><a class="nav-link <?php if (in_array($page, $projects)) {echo "active";}?>">Projects</a></li>
     </ul>
     <h6 class="footer-copyright">Copyright &copy; <span id="current-year"></span> Steve Orchosky. All Rights Reserved.</h6>
   </div>

@@ -28,7 +28,7 @@ gulp.task('default', function() {
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-        gulp.src('./src/scss/style.scss')
+        gulp.src('./src/scss/style2.scss')
         .pipe(sass())
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
@@ -59,7 +59,7 @@ gulp.task('php-partials', function() {
 // Copy js to build file
 gulp.task('scripts', function() {
     //Order script files will appear
-    gulp.src(['./src/js/slider.js', './src/js/current-year.js', './src/js/instagram.js', './src/js/scrollTo.js', './src/js/overlayNavigation.js'])
+    gulp.src(['./src/js/loading-screen.js', './src/js/slider.js', './src/js/current-year.js', './src/js/instagram.js', './src/js/scrollTo.js', './src/js/overlayNavigation.js', './src/js/scrollReveal.js'])
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest('./build/'))
     .pipe(browserSync.stream());

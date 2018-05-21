@@ -7,20 +7,17 @@ nav {
   width: 100%;
   position: absolute;
   background: $white;
-  z-index: 30;
-}
-
-nav a.logo {
-  width: 4em;
-  padding: 1em;
-  justify-content: flex-start;
-  img{
-    width: 4em;
-  }
+  z-index: 10;
 }
 
 nav a.logo {
   background-color: $blue;
+  width: 2em;
+  padding: 1em;
+  justify-content: flex-start;
+  img{
+    width: 2em;
+  }
   &:hover {
     background-color: $blue--hover;
   }
@@ -36,19 +33,30 @@ nav ul {
 
 nav li {
   display: inline-block;
+  a.active {
+    color: $blue;
+  }
 }
 
-// Works nav overlay
-div.overlay-container {
-  display: none;
+// Overlay Nav
+div.overlay-container#myNav {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear, opacity 0.3s $custom-timing;
+  z-index: 9999;
 }
 
 div.overlay {
+  background-color: #000;
   background-color: $black--90;
+  position: fixed;
   width: 100vw;
   height: 100vh;
-  position: fixed;
   z-index: 9998;
+  ul {
+    list-style-type: none;
+  }
   * {
     color: $white;
   }

@@ -10,3 +10,22 @@
     fill: $blue;
   }
 }
+
+div.client-slider div.slick-list div.slick-slide{
+	display: flex;
+	align-items: center;
+	margin: auto;
+	height: 8em;
+}
+
+div.client-slider div.slick-list div.slick-slide div{
+	display: flex;
+	margin: auto;
+	align-items: center;
+	img.client-logo {
+		box-sizing: border-box;
+		display: block;
+		margin: auto;
+		padding: 2em;
+	}
+}

@@ -28,7 +28,7 @@ gulp.task('default', function() {
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-        gulp.src('./src/scss/style2.scss')
+        gulp.src('./src/scss/style.scss')
         .pipe(sass())
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],

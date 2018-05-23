@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'RockwellStd-Light';
+  src: url('RockwellStd-Light.eot');
+  src: url('RockwellStd-Light.woff2') format('woff2'),
+       url('RockwellStd-Light.woff') format('woff'),
+       url('RockwellStd-Light.ttf') format('truetype'),
+       url('RockwellStd-Light.svg#RockwellStd-Light') format('svg'),
+       url('RockwellStd-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

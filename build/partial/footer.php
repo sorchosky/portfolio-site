@@ -14,6 +14,9 @@
       <a href="https://dribbble.com/sorchosky"><i class="fa fa-dribbble"></i></a>
     </li>
     <li>
+      <a href="https://github.com/sorchosky/"><i class="fa fa-github"></i></a>
+    </li>
+    <li>
       <a href="https://twitter.com/sorchosky"><i class="fa fa-twitter"></i></a>
     </li>
   </ul>

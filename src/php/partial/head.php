@@ -31,6 +31,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style.css">
 
 </head>
